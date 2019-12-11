@@ -1,0 +1,61 @@
+---
+title: "data_package"
+author: "Lily Zhao"
+date: "12/11/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# every dataset is a different resource
+# then add metadata to describe collection of data resources
+# describe what licenses are attached to data resources
+# write a schema with having to get into the details of it
+# the creator populates the schema for you
+
+```{r}
+library(datapackage.r)
+
+dataPackage <- Package.load()
+dataPackage$descriptor['name'] <- 'period-table'
+dataPackage$descriptor['title'] <- 'Periodic Table'
+# commit the changes to Package class
+dataPackage$commit()
+
+filepath <- read.csv("data/profit_quantity_calculations.csv")
+#does this make sense when whole project is on github or upload it not from within the package?
+
+#are keywords those not within the title? #from video seems like you need it. 
+
+
+```
+
+
+We can guess at our CSV’s schema by using infer from the Table Schema package. We pass directly the remote link to the infer function, the result of which is an inferred schema
+```{r}
+schema <- tableschema.r::infer(filepath) #inferring schema doens't work in R but does on going. 
+#error message: when trying to use infer
+#‘-’ not meaningful for factorsthe condition has length > 1 and only the first element will be used
+
+#title vs. name for each reouces the same as metadata name and titles?  plus data tabular data profile # same as settings bar. 
+
+#remove the columns that you don't need do this in in data.packages or do this use -select in tidyverse first so that you can follow along easily/ for privacy reasons.
+
+#what happens when you edit the title for the columns?
+
+#can i blend in some dplyr commands in here?
+
+# title as compared to the name of the different resource?
+
+#edit the same different than coumn name so should rename w dpylr?
+#change column to string in schema you have to do so ub dpylr too]
+
+```
+
+error message:
+‘-’ not meaningful for factorsthe condition has length > 1 and only the first element will be used
+
+
+
