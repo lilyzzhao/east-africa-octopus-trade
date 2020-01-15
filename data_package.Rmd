@@ -29,50 +29,22 @@ write_csv(data, "Middlemen_Price_Quantity.csv")
 
 ```{r}
 library(datapackage.r)
-
 dataPackage <- Package.load()
-dataPackage$descriptor['name'] <- 'period-table'
-dataPackage$descriptor['title'] <- 'Periodic Table'
+dataPackage$descriptor['name'] <- 'octopus-trade-middlemen'
+dataPackage$descriptor['title'] <- 'Octopus Value Chain Data'
 # commit the changes to Package class
 dataPackage$commit()
-filepath <- read.csv("data/Octopus-Middlemen-Data.csv")
-
-
-#does this make sense when whole project is on github or upload it not from within the package?
-
-#are keywords those not within the title? #from video seems like you need it. 
-
+filepath <- read.csv("data/octopusmiddlemen.csv")
 
 ```
 
 
 We can guess at our CSV’s schema by using infer from the Table Schema package. We pass directly the remote link to the infer function, the result of which is an inferred schema
 ```{r}
-schema <- tableschema.r::infer(filepath) ##inferring schema doens't work in R but does on gui. 
-#error message: when trying to use infer
-##‘-’ not meaningful for factorsthe condition has length > 1 and only the first element will be used
+schema <- tableschema.r::infer(filepath) ##inferring schema doens't work in R but does on the gui and in python. 
 
-##title vs. name for each resouces the same as metadata name and titles?  plus data tabular data profile # same as settings bar. 
+#error message: when trying to use infer schema: ‘-’ not meaningful for factorsthe condition has length > 1 and only the first element will be usedError in if (!headersRow) break : missing value where TRUE/FALSE needed
 
-#remove the columns that you don't need do this in in data.packages or do this use -select in tidyverse first so that you can follow along easily/ for privacy reasons.
 
-#what happens when you edit the title for the columns?
-
-#can i blend in some dplyr commands in here?
-
-# title as compared to the name of the different resource?
-
-#edit the same different than coumn name so should rename w dpylr?
-#change column to string in schema you have to do so ub dpylr too]
 
 ```
-
-error message:
-‘-’ not meaningful for factorsthe condition has length > 1 and only the first element will be used
-
-```{r}
-file = 'octopusmiddlemen.csv'
-schema = tableschema.r::infer(file)
-```
-
-
