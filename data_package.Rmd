@@ -19,6 +19,13 @@ data<-read_csv("data/Middlemen_Value_Chain.csv") %>%
   clean_names() 
 mutate_all(data, funs(na_if(.,"")))
 write_csv(data, "Middlemen_Price_Quantity.csv")
+
+
+data<-read_csv("data/middlemen.csv") %>% 
+  clean_names() 
+mutate_all(data, funs(na_if(.,"")))
+write_csv(data, "East_Africa_Octopus_Middlemen.csv")
+
 ```
 
 # every dataset is a different resource
@@ -34,7 +41,7 @@ dataPackage$descriptor['name'] <- 'octopus-trade-middlemen'
 dataPackage$descriptor['title'] <- 'Octopus Value Chain Data'
 # commit the changes to Package class
 dataPackage$commit()
-filepath <- read.csv("data/octopusmiddlemen.csv")
+filepath <- read.csv("East_Africa_Octopus_Middlemen.csv")
 
 ```
 
