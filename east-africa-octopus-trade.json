@@ -1,0 +1,329 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "resource1",
+      "path": "East_Africa_Octopus_Middlemen.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "format": "default",
+            "description": "anonymous ID number",
+            "title": "ID"
+          },
+          {
+            "name": "role",
+            "type": "string",
+            "format": "default",
+            "description": "role within the value chain",
+            "title": "role"
+          },
+          {
+            "name": "site",
+            "type": "string",
+            "format": "default",
+            "description": "location in Tanzania or Kenya where they were interviewed and where they primarily trade from",
+            "title": "site "
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "format": "default",
+            "description": "country from which they operate",
+            "title": "country"
+          },
+          {
+            "name": "who_are_your_main_supplier_of_octopus_denoted_for_primary_supplier",
+            "type": "string",
+            "format": "default",
+            "description": "main i.e. primary supplier group for respondent",
+            "title": "primary supplier group"
+          },
+          {
+            "name": "gender_of_primary_supplier",
+            "type": "string",
+            "format": "default",
+            "title": "gender of primary supplier group"
+          },
+          {
+            "name": "location_of_primary_supplier",
+            "type": "string",
+            "format": "default",
+            "title": "location of primary supplier",
+            "description": "where their primary supplier group operates out of"
+          },
+          {
+            "name": "how_many_of_each_of_these_types_of_supplier_do_you_work_with_primary_supplier",
+            "type": "integer",
+            "format": "default",
+            "title": "how many individuals within this supplier group do you trade with (for primary suppliers)"
+          },
+          {
+            "name": "simplified_how_many_of_each_of_these_types_of_supplier_do_you_work_with_primary_supplier",
+            "type": "integer",
+            "format": "default",
+            "title": "simplified version (average) of how many individuals within this supplier group do you trade with (for primary suppliers)",
+            "description": "respondent's answer (if range) has been edited for the purpose of analysis. See column to the left for original answer"
+          },
+          {
+            "name": "how_long_have_your_worked_with_them_primary_supplier",
+            "type": "integer",
+            "format": "default",
+            "description": "in years",
+            "title": "how long they have worked with primary suppliers"
+          },
+          {
+            "name": "average_number_of_years_worked_together_primary_supplier",
+            "type": "integer",
+            "format": "default",
+            "title": "average number of years worked with primary supplier",
+            "description": "respondent's answer has been edited for the purpose of analysis. See column to the left for original answer."
+          },
+          {
+            "name": "kazi_buying_price_from_primary_supplier_in_home_country_currency_kg",
+            "type": "integer",
+            "format": "default",
+            "title": "for primary supplier what is the price they buy octopus at per kg in the currency of their home country during the Kazi season"
+          },
+          {
+            "name": "simplified_kazi_buying_price_from_primary_supplier_in_home_country_currency_kg",
+            "type": "integer",
+            "format": "default",
+            "title": "for primary supplier what is the average price they buy octopus at per kg in the currency of their home country during the Kazi season",
+            "description": "respondent's answer has been edited if a range was given.  See column to the left for original answer"
+          },
+          {
+            "name": "simplified_kazi_buying_price_from_primary_supplier_in_usd_kg_using_september_2017_conversion_rates_of_2241_6882771832_tzs_to_1_usd_and_103_1033080415kes_to_1_usd_throughout_dataset",
+            "type": "integer",
+            "format": "default",
+            "title": "for primary supplier what is the average price they buy octopus at per kg in USD during the Kazi season",
+            "description": "September 2017 conversion rates of 2241.6882771832 TZS to 1 USD and 103.1033080415 KES to 1 USD are used here and throughout the dataset"
+          },
+          {
+            "name": "average_kazi_quantity_purchased_from_primary_supplier_in_kg_per_month",
+            "type": "integer",
+            "format": "default",
+            "title": "average quantity purchased from primary supplier in kg/month during kazi"
+          },
+          {
+            "name": "calculated_average_quantity_in_kg_purchased_from_primary_supplier_over_the_course_of_a_kazi_season_ie_six_months",
+            "type": "integer",
+            "format": "default",
+            "title": "calculated average quantity purchased from primary supplier  in kg/kazi season",
+            "description": "this column is calculated by multiplying the column to the left by 6 months as kazi season= 6 months"
+          },
+          {
+            "name": "calculated_average_quantity_in_metric_tonnes_purchased_from_primary_supplier_over_the_course_of_a_kazi_season_month_ie_six_months",
+            "type": "integer",
+            "format": "default",
+            "description": "his column is calculated by dividing the column to the left by 1000 as there are 1000kg in a metric tonne",
+            "title": "calculated average quantity in metric tonnes purchased from primary supplier over the course of a kazi season"
+          },
+          {
+            "name": "kusi_buying_price_from_primary_supplier_in_home_country_currency_kg",
+            "type": "integer",
+            "format": "default",
+            "title": "for primary supplier what is the price they buy octopus at per kg in home country currency  during the Kusi season"
+          },
+          {
+            "name": "simplified_kusi_season_buying_price_from_primary_supplier_in_home_country_currency_kg",
+            "type": "integer",
+            "format": "default",
+            "description": "respondent's answer has been edited for the purpose of analysis. by taking an average of a range if given. See column to the left for original answer.",
+            "title": "for primary supplier what is the average price they buy octopus at per kg in home country currency during the Kusi season"
+          },
+          {
+            "name": "simplified_kusi_season_buying_price_from_primary_supplier_in_usd_kg",
+            "type": "integer",
+            "format": "default",
+            "description": "September 2017 conversion rates of 2241.6882771832 TZS to 1 USD and 103.1033080415 KES to 1 USD are used here and throughout the dataset",
+            "title": "simplified version of for primary supplier what is the average price they buy octopus at per kg in USD during the Kusi season"
+          },
+          {
+            "name": "calculated_average_quantity_in_kg_purchased_from_primary_supplier_over_the_course_of_a_kusi_season_month_ie_six_months",
+            "type": "integer",
+            "format": "default",
+            "description": "this column is calculated by multiplying the column to the left by 6 months as kazi season= 6 months",
+            "title": "calculated average quantity purchased from primary supplier in kg/kusi season"
+          },
+          {
+            "name": "calculated_average_quantity_in_metric_tonnes_purchased_from_primary_supplier_over_the_course_of_a_kusi_season_month_ie_six_months",
+            "type": "integer",
+            "format": "default",
+            "description": "this column is calculated by dividing the column to the left by 1000 as there are 1000kg in a metric tonne",
+            "title": "calculated average quantity in metric tonnes purchased from primary supplier over the course of a kusi season"
+          },
+          {
+            "name": "who_are_your_2nd_main_suppliers_of_octopus_denoted_as_secondary_supplier",
+            "type": "string",
+            "format": "default",
+            "title": "secondary octopus supplier group",
+            "description": "2nd main supplier group"
+          },
+          {
+            "name": "location_of_secondary_supplier",
+            "type": "string",
+            "format": "default",
+            "title": "location of secondary supplier"
+          },
+          {
+            "name": "gender_of_secondary_supplier",
+            "type": "string",
+            "format": "default",
+            "title": "gender of secondary supplier group"
+          },
+          {
+            "name": "how_many_individuals_in_this_secondary_supplier_group_do_you_work_with",
+            "type": "string",
+            "format": "default",
+            "title": "number of individuals in secondary supplier group"
+          },
+          {
+            "name": "how_long_have_your_worked_with_them_for_secondary_supplier",
+            "type": "string",
+            "format": "default",
+            "title": "how long have they worked with their secondary supplier group"
+          },
+          {
+            "name": "for_secondary_supplier_kazi_price_per_kg_in_home_country_currency",
+            "type": "string",
+            "format": "default",
+            "title": "for secondary supplier what is the prices they buy octopus at per kg in the currency of their home country during the Kazi season"
+          },
+          {
+            "name": "calculated_average_kazi_quantity_in_kg_per_month_from_secondary_supplier_group",
+            "type": "string",
+            "format": "default",
+            "title": "average quantity purchased from secondary supplier in kg/month during kazi season"
+          },
+          {
+            "name": "calculated_average_kazi_season_quantity_in_kg_secondary_supplier_ie_6_months",
+            "type": "string",
+            "format": "default",
+            "title": "calculated average quantity in kg purchased from secondary supplier over the course of a kazi season",
+            "description": "this column is calculated by multiplying the column to the left by 6 months as kazi season= 6 months"
+          },
+          {
+            "name": "calculated_average_kazi_season_quantity_in_kg_secondary_supplier_ie_6_months_in_metric_tonnes",
+            "type": "string",
+            "format": "default",
+            "description": "this column is calculated by dividing the column to the left by 1000 as there are 1000kg in a metric tonne\"",
+            "title": "calculated average quantity in metric tonnes purchased from secondary supplier over the course of a kazi season in metric tonnes"
+          },
+          {
+            "name": "for_secondary_supplier_kusi_price_kg",
+            "type": "string",
+            "format": "default",
+            "title": "for secondary supplier what is the average price or price range they buy octopus at per kg in the currency of their home country during the Kusi season"
+          },
+          {
+            "name": "for_secondary_supplier_average_kusi_price_kg_in_home_country_currency",
+            "type": "string",
+            "format": "default",
+            "description": "simplified from column to the left by taking average of any range given",
+            "title": "simplified version of:  for secondary supplier what is the average price they buy octopus at per kg in the currency of their home country during the Kusi season"
+          },
+          {
+            "name": "calculated_yearly_quantity_traded_by_respondent_ie_kazi_quantity_from_primary_supplier_and_secondary_supplier_and_kusi_quantity_from_primary_supplier_and_secondary_supplier_in_metric_tonnes",
+            "type": "integer",
+            "format": "default",
+            "title": "calculated yearly quantity traded by respondent ",
+            "description": "this is calculated by adding up the per season quantity bought from secondary and primary suppliers during Kazi and Kusi seasons"
+          },
+          {
+            "name": "respondents_main_buyers",
+            "type": "string",
+            "format": "default",
+            "title": "primary buyers",
+            "description": "the main buyer groups of the respondent"
+          },
+          {
+            "name": "kazi_season_selling_price_to_buyers_in_home_country_currency_per_kg",
+            "type": "integer",
+            "format": "default",
+            "title": "what is the price they sell octopus to these buyers per kg in the currency of their home country during the Kazi season"
+          },
+          {
+            "name": "simplified_kazi_season_selling_price_to_buyers_in_home_country_currency_per_kg",
+            "type": "integer",
+            "format": "default",
+            "description": "if a price range was given for the column to the left here it has been simplified to give an average price they sell octopus to these buyers per kg in the currency of their home country during the Kazi season",
+            "title": "average price they sell octopus to these buyers per kg in the currency of their home country during the Kazi season"
+          },
+          {
+            "name": "simplified_kazi_season_selling_price_to_buyers_in_usd_per_kg",
+            "type": "integer",
+            "format": "default",
+            "title": "average price they sell octopus to these buyers per kg in USD during the Kazi season",
+            "description": "September 2017 conversion rates of 2241.6882771832 TZS to 1 USD and 103.1033080415 KES to 1 USD are used here and throughout the dataset"
+          },
+          {
+            "name": "kusi_season_selling_price_to_buyers_in_home_country_currency_per_kg",
+            "type": "integer",
+            "format": "default",
+            "title": "kusi season selling price to their buyers in home country currency per kg"
+          },
+          {
+            "name": "simplified_kusi_season_selling_price_to_buyers_in_home_country_currency_kg",
+            "type": "integer",
+            "format": "default",
+            "title": "simplified kusi season selling price to their buyers in home country currency per kg",
+            "description": "simplified from column to the left by taking average of any range given"
+          },
+          {
+            "name": "simplified_kusi_season_selling_price_to_buyers_in_usd_kg",
+            "type": "integer",
+            "format": "default",
+            "title": "simplified kusi season selling price to their buyers in USD per kg"
+          },
+          {
+            "name": "total_number_of_fishers_supplying_respondent_calculated_from_primary_supplier_and_secondary_supplier",
+            "type": "integer",
+            "format": "default",
+            "description": "calculated from primary supplier and secondary supplier number columns plus supplier type ",
+            "title": "total number of fishers supplying respondent"
+          },
+          {
+            "name": "total_number_of_traders_supplying_interviewee_calculated_from_primary_supplier_and_secondary_supplier",
+            "type": "integer",
+            "format": "default",
+            "description": "calculated from primary supplier and secondary supplier number columns plus supplier type",
+            "title": "total number of traders supplying respondent"
+          },
+          {
+            "name": "total_number_of_suppliers_calculated_from_summing_primary_and_secondary_supplier",
+            "type": "integer",
+            "format": "default",
+            "description": "calculated from primary supplier and secondary supplier number columns",
+            "title": "total number of supplier supplying respondent"
+          }
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    "value chain",
+    "supply chain",
+    "seafood trade",
+    "Kenya"
+  ],
+  "name": "east-africa-octopus-trade-middlemen",
+  "title": "East Africa Octopus Trade Middlemen Price and Quantity Data",
+  "description": "East Africa Octopus Trade Middlemen Price and Quantity Data collected during August and September 2017 in Kenya and Tanzania",
+  "contributors": [
+    {
+      "title": "L Zhao",
+      "role": "author"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "title": "CC0 1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ]
+}
